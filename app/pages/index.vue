@@ -41,7 +41,7 @@
         </div>
        
 
-        <img src="/public/images/hero/hero-img.jpg" alt="Coaches" class="rounded-lg shadow-2xl ring ring-default" />
+        <img src="/images/hero/hero-img.jpg" alt="Coaches" class="rounded-lg shadow-2xl ring ring-default" />
       </div>
     </div>
     
