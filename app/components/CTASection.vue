@@ -11,7 +11,7 @@ const nextWorkshopDate = ref('February 8, 2026')
      variant="subtle"
       :links="[{
   label: 'Join now | Waitinglist',
-  to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',
+  to: '/contact',
   target: '_blank',
   color: 'neutral'
 }]" />

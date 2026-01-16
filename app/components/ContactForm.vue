@@ -59,7 +59,7 @@ const { ui } = useAppConfig()
         <input type="checkbox" name="privacy" required class="mt-1" />
         <span>
           I agree to the
-          <NuxtLink to="/privacy" class="underline">
+          <NuxtLink to="/impressum" class="underline">
             privacy policy
           </NuxtLink>.
         </span>
