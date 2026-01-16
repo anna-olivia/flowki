@@ -54,12 +54,12 @@
  <CTASection id="workshop"/>
   <NuxtLink
       to="/"
-      class="block mx-auto underline text-sm text-center py-4">
-      <p>
+      class="block mx-auto underline text-sm text-center py-4 cursor-pointer">
+    
         Back to top 
       
     
-      </p>
+    
      
      
     </NuxtLink>

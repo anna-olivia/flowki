@@ -31,6 +31,17 @@ Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden 
 Diese Website verwendet Schriftarten, die lokal eingebunden wurden. Es werden keine Daten an Dritte weitergegeben.
     </p>
 <br>
+<h2 class="text-3xl sm:text-3xl text-pretty tracking-tight font-semibold text-highlighted">Datenschutzerklärung & Schutz deiner Privatsphäre</h2>
+
+<p>
+Personenbezogene Daten werden nur dann erhoben, wenn du das Formular für die Anmeldung oder das Setzen auf die Warteliste des Workshops ausfüllst.
+</p>
+<p>
+Dabei wird ausschließlich deine E-Mail-Adresse gespeichert.
+Weitere Daten werden nicht erhoben.
+    </p>
+
+    <br>
     <NuxtLink
       to="/"
       class="inline-block underline text-sm"

@@ -12,25 +12,20 @@ const items = ref([
   [
     {
       label: 'About',
+      to:'/#about',
       icon: 'i-lucide-users'
     },
     {
       label: 'Workshop',
+      to:'/#workshop',
       icon: 'i-lucide-crown'
     },
     {
       label: 'Career Coaching',
+      to:'/#coaching',
       icon: 'i-lucide-user-plus',
      
-    },
-    {
-      label: 'Support',
-      icon: 'i-lucide-life-buoy'
-    },
-     {
-            label: 'Email',
-            icon: 'i-lucide-mail'
-          }
+    }
   ]
 ])
 </script>
@@ -67,8 +62,8 @@ const items = ref([
 
     <!-- Mobile Hamburger -->
     <div class="lg:hidden">
-      <UDropdownMenu :items="items">
-        <UButton icon="i-lucide-menu" class="text-highlighted" />
+      <UDropdownMenu :items="items" class="bg-[#fff3e3]">
+        <UButton icon="i-lucide-menu" class="text-highlighted cursor-pointer"/>
       </UDropdownMenu>
     </div>
   </nav>
