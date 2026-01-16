@@ -1,5 +1,6 @@
 <script setup>
 useHead({
+  title: 'FlowKi  - Holistic Career Coaching ',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
@@ -11,67 +12,43 @@ useHead({
   }
 })
 
-const title = 'Nuxt Starter Template'
-const description = 'A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours.'
+const title = 'Career Coaching Workshop for International Professionals | FlowKi Job Coaching Berlin'
+const description = 'Unlock your career potential with FlowKi: the hands-on job coaching and career development workshop for international professionals and tech talent. Experience group coaching, practical job search strategies, and holistic personal growth—online from Berlin. Join now for guidance, support, and a fresh start in today’s changing job market!'
 
 useSeoMeta({
   title,
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-  twitterCard: 'summary_large_image'
+  // ogImage: '/',
+  // twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
+  // twitterCard: 'summary_large_image'
 })
 </script>
 
 <template>
   <UApp>
-    <UHeader>
-      <template #left>
-        <NuxtLink to="/">
-          <AppLogo class="w-auto h-6 shrink-0" />
-        </NuxtLink>
-
-        <TemplateMenu />
-      </template>
-
-      <template #right>
-        <UColorModeButton />
-
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
-      </template>
-    </UHeader>
+    <header>
+    <TemplateMenu/>
+    </header>
 
     <UMain>
       <NuxtPage />
     </UMain>
 
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
+    <USeparator />
 
     <UFooter>
       <template #left>
-        <p class="text-sm text-muted">
-          Built with Nuxt UI • © {{ new Date().getFullYear() }}
+        <p class="text-l">
+          Flowki Career Coaching • © {{ new Date().getFullYear() }}
         </p>
       </template>
 
       <template #right>
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
+        <NuxtLink to="/impressum">
+            <UButton variant="ghost">Impressum</UButton>
+        </NuxtLink>
       </template>
     </UFooter>
   </UApp>

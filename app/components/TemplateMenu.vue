@@ -1,49 +1,78 @@
+<script setup lang="ts">
+const items = ref([
+  [
+    {
+      label: 'FlowKi',
+      avatar: {
+        src: '/images/logos/flowki_logo.svg'
+      },
+      type: 'label'
+    }
+  ],
+  [
+    {
+      label: 'About',
+      icon: 'i-lucide-users'
+    },
+    {
+      label: 'Workshop',
+      icon: 'i-lucide-crown'
+    },
+    {
+      label: 'Career Coaching',
+      icon: 'i-lucide-user-plus',
+     
+    },
+    {
+      label: 'Support',
+      icon: 'i-lucide-life-buoy'
+    },
+     {
+            label: 'Email',
+            icon: 'i-lucide-mail'
+          }
+  ]
+])
+</script>
+
 <template>
-  <UDropdownMenu
-    v-slot="{ open }"
-    :modal="false"
-    :items="[{
-      label: 'Starter',
-      to: 'https://starter-template.nuxt.dev/',
-      color: 'primary',
-      checked: true,
-      type: 'checkbox'
-    }, {
-      label: 'Landing',
-      to: 'https://landing-template.nuxt.dev/'
-    }, {
-      label: 'Docs',
-      to: 'https://docs-template.nuxt.dev/'
-    }, {
-      label: 'SaaS',
-      to: 'https://saas-template.nuxt.dev/'
-    }, {
-      label: 'Dashboard',
-      to: 'https://dashboard-template.nuxt.dev/'
-    }, {
-      label: 'Chat',
-      to: 'https://chat-template.nuxt.dev/'
-    }, {
-      label: 'Portfolio',
-      to: 'https://portfolio-template.nuxt.dev/'
-    }, {
-      label: 'Changelog',
-      to: 'https://changelog-template.nuxt.dev/'
-    }]"
-    :content="{ align: 'start' }"
-    :ui="{ content: 'min-w-fit' }"
-    size="xs"
-  >
-    <UButton
-      label="Starter"
-      variant="subtle"
-      trailing-icon="i-lucide-chevron-down"
-      size="xs"
-      class="-mb-[6px] font-semibold rounded-full truncate"
-      :class="[open && 'bg-primary/15']"
-      :ui="{
-        trailingIcon: ['transition-transform duration-200', open ? 'rotate-180' : undefined].filter(Boolean).join(' ')
-      }"
-    />
-  </UDropdownMenu>
+ 
+  <nav class="flex items-center justify-between">
+  
+<NuxtLink to="/">
+           <!-- <img src="/images/logos/flowki_logo.svg" class="w-auto h-20" alt="Flowki logo"> -->
+           <img src="/images/typo.svg" class="w-auto h-20" alt="Flowki logo">
+
+        </NuxtLink>
+    <!-- Desktop Menu -->
+    <div class="hidden lg:flex items-center gap-6">
+        <NuxtLink to="/#about">
+            <UButton variant="ghost">About</UButton>
+        </NuxtLink>
+        <NuxtLink to="/#workshop">
+             <UButton variant="ghost">Workshop</UButton>
+        </NuxtLink>    
+        <NuxtLink to="/#coaching">
+            <UButton variant="ghost">Career Coaching</UButton>
+        </NuxtLink>    
+        <NuxtLink to="/contact">
+            <UButton variant="ghost" icon="i-lucide-mail" />
+        </NuxtLink>    
+
+      
+     
+      
+      
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div class="lg:hidden">
+      <UDropdownMenu :items="items">
+        <UButton icon="i-lucide-menu" class="text-highlighted" />
+      </UDropdownMenu>
+    </div>
+  </nav>
+
+
 </template>
+

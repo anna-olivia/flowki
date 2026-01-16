@@ -1,18 +1,187 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-@theme static {
-  --font-sans: 'Public Sans', sans-serif;
-
-  --color-green-50: #EFFDF5;
-  --color-green-100: #D9FBE8;
-  --color-green-200: #B3F5D1;
-  --color-green-300: #75EDAE;
-  --color-green-400: #00DC82;
-  --color-green-500: #00C16A;
-  --color-green-600: #00A155;
-  --color-green-700: #007F45;
-  --color-green-800: #016538;
-  --color-green-900: #0A5331;
-  --color-green-950: #052E16;
+ @font-face {
+  font-family: 'merri';
+  src: url('/public/fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf') format('ttf'),
+       url('/public/fonts/Merriweather/static/Merriweather_120pt-Medium.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: 'raleway';
+  src: url('/public/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('ttf'),
+       url('/public/fonts/Raleway/static/Raleway-Medium.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-bg-primary: #fff3e3;
+  --color-text-primary: #1c1c1c;
+  --color-primary: #2d4358;
+  --color-accent: #ff4081;
+  --font-heading: merri, serif;
+  --font-body: raleway, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+
+body, header {
+  background-color: var(--color-bg-primary);
+  color: var(--color-primary);
+  border-bottom-color: var(--color-bg-primary);
+padding: 1.5rem;
+font-size: 1.1rem;
+
+}
+
+h1,h2,h3 {
+  font-family: var(--font-heading);
+
+  
+}
+
+ strong {
+  color: #03Dac6;
+  color: #ffde03;
+  color: #90ee02;
+  /* color: #ee6002; */
+
+
+
+ 
+}
+
+h1 span{
+display: inline-block;
+/* height: 5%; */
+width: 20%;
+}
+
+span img {
+  display: inline-block;
+  /* height: 100%; */
+}
+
+.hero-img {
+  background-image: url(/images/hero-img.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.text-inverted {
+  background-color: var(--color-accent)
+}
+.text-highlighted {
+  color: var(--color-primary);
+  text-shadow: 2px 2px 1px var(--color-bg-primary);
+}
+.hero-space {
+  margin: 0;
+  padding:0;
+}
+
+.custom-container {
+  width: 100%;
+  max-width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.team-grid {
+  display: grid;
+  margin-top: 50px;
+  align-items: end;
+  grid-auto-flow: row;
+  grid-auto-columns: 1fr;
+  gap: 56px 64px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+.team-circles {
+  position: relative;
+  padding: 80px 30px;
+  border-style: none;
+  border-width: 0px;
+  border-color: black;
+  color: rgb(28, 28, 28);
+  font-size: 18px;
+}
+
+.team-member-image {
+  width: 270px;
+  height: 270px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1440px) {
+    .team-grid {
+    place-items: end stretch;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .team-circles {
+    border-style: none;
+    border-width: 0px;
+    border-color: black;
+    box-shadow: none;
+    
+  }
+}
+  
+
+
+
+@media screen and (min-width: 1440px) {
+  .team-member-image {
+    width: 270px;
+    height: 270px;
+    max-height: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+    .team-grid {
+    column-gap: 40px;
+  }
+  .team-circles {
+    border-style: none;
+    border-width: 0px;
+    color: rgb(28, 28, 28);
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .team-member-image {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+   .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .team-circles {
+    padding: 60px 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+   .team-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .team-circles {
+    font-size: 18px;
+  }
+}
+
