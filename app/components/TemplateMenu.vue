@@ -39,24 +39,24 @@ const items = ref([
  
   <nav class="flex items-center justify-between">
   
-<NuxtLink to="/" class="cursor-pointer">
+<NuxtLink to="/">
            <!-- <img src="/images/logos/flowki_logo.svg" class="w-auto h-20" alt="Flowki logo"> -->
-           <img src="/images/typo.svg" class="w-auto h-20" alt="Flowki logo">
+           <img src="/images/typo.svg" class="w-auto h-20 cursor-pointer" alt="Flowki logo">
 
         </NuxtLink>
     <!-- Desktop Menu -->
     <div class="hidden lg:flex items-center gap-6">
-        <NuxtLink to="/#about" class="cursor-pointer">
-            <UButton variant="ghost">About</UButton>
+        <NuxtLink to="/#about">
+            <UButton variant="ghost"  class="cursor-pointer">About</UButton>
         </NuxtLink>
-        <NuxtLink to="/#workshop" class="cursor-pointer">
-             <UButton variant="ghost">Workshop</UButton>
+        <NuxtLink to="/#workshop" >
+             <UButton variant="ghost" class="cursor-pointer">Workshop</UButton>
         </NuxtLink>    
-        <NuxtLink to="/#coaching" class="cursor-pointer">
-            <UButton variant="ghost">Career Coaching</UButton>
+        <NuxtLink to="/#coaching">
+            <UButton variant="ghost" class="cursor-pointer">Career Coaching</UButton>
         </NuxtLink>    
-        <NuxtLink to="/contact" class="cursor-pointer">
-            <UButton variant="ghost" icon="i-lucide-mail" />
+        <NuxtLink to="/contact">
+            <UButton variant="ghost" icon="i-lucide-mail" class="cursor-pointer"/>
         </NuxtLink>    
 
       
