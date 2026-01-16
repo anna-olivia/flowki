@@ -39,23 +39,23 @@ const items = ref([
  
   <nav class="flex items-center justify-between">
   
-<NuxtLink to="/">
+<NuxtLink to="/" class="cursor-pointer">
            <!-- <img src="/images/logos/flowki_logo.svg" class="w-auto h-20" alt="Flowki logo"> -->
            <img src="/images/typo.svg" class="w-auto h-20" alt="Flowki logo">
 
         </NuxtLink>
     <!-- Desktop Menu -->
     <div class="hidden lg:flex items-center gap-6">
-        <NuxtLink to="/#about">
+        <NuxtLink to="/#about" class="cursor-pointer">
             <UButton variant="ghost">About</UButton>
         </NuxtLink>
-        <NuxtLink to="/#workshop">
+        <NuxtLink to="/#workshop" class="cursor-pointer">
              <UButton variant="ghost">Workshop</UButton>
         </NuxtLink>    
-        <NuxtLink to="/#coaching">
+        <NuxtLink to="/#coaching" class="cursor-pointer">
             <UButton variant="ghost">Career Coaching</UButton>
         </NuxtLink>    
-        <NuxtLink to="/contact">
+        <NuxtLink to="/contact" class="cursor-pointer">
             <UButton variant="ghost" icon="i-lucide-mail" />
         </NuxtLink>    
 
