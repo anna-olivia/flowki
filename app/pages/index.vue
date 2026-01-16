@@ -53,7 +53,7 @@
   <!-- CTA -->
  <CTASection id="workshop"/>
   <NuxtLink
-      to="#"
+      to="/"
       class="block mx-auto underline text-sm text-center py-4 cursor-pointer">
     
         Back to top 
