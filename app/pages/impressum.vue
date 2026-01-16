@@ -5,9 +5,9 @@
     </h1>
 <address>
     <p>Anna-Olivia Lebert-Wietholtz</p>
-    <p>Kiefholzstraße 403c</p>
+    <p>Kiefholzstraße 403</p>
     <p>12435 Berlin</p>
-    <p>Kontakt: a.wietholtz(at)posteo.de</p>
+    <p>Kontakt: illu.elli2023@gmail.com</p>
 </address>
 <br>
 <h2 class="text-3xl sm:text-3xl text-pretty tracking-tight font-semibold text-highlighted">Hosting</h2>
