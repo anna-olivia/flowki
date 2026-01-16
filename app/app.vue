@@ -47,7 +47,7 @@ useSeoMeta({
 
       <template #right>
         <NuxtLink to="/impressum">
-            <UButton variant="ghost">Impressum</UButton>
+            <UButton variant="ghost" class="cursor-pointer">Impressum</UButton>
         </NuxtLink>
       </template>
     </UFooter>
